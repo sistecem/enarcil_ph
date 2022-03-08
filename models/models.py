@@ -9,8 +9,6 @@ class enarcil_ph(models.Model):
 
     name = fields.Char()
 
-from odoo import models, fields, api
-
     @api.model
     def test(self, key):
         do_something = 'do something'
