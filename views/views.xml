@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="enarcil_ph.list">
+      <field name="name">enarcil_ph list</field>
+      <field name="model">enarcil_ph.enarcil_ph</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="enarcil_ph.action_window">
+      <field name="name">enarcil_ph window</field>
+      <field name="res_model">enarcil_ph.enarcil_ph</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="enarcil_ph.action_server">
+      <field name="name">enarcil_ph server</field>
+      <field name="model_id" ref="model_enarcil_ph_enarcil_ph"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="enarcil_ph" id="enarcil_ph.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="enarcil_ph.menu_1" parent="enarcil_ph.menu_root"/>
+    <menuitem name="Menu 2" id="enarcil_ph.menu_2" parent="enarcil_ph.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="enarcil_ph.menu_1_list" parent="enarcil_ph.menu_1"
+              action="enarcil_ph.action_window"/>
+    <menuitem name="Server to list" id="enarcil_ph" parent="enarcil_ph.menu_2"
+              action="enarcil_ph.action_server"/>
+-->
+  </data>
+</odoo>
